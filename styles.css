@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF7F2;
+}
+
+/* Latar bertema kertas dengan pola garis halus */
+body {
+  background-color: #FAF7F2;
+  background-image:
+    linear-gradient(to right, rgba(136, 84, 53, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(136, 84, 53, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Kursor berkedip untuk animasi mengetik */
+.typing-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: #885435;
+  animation: blink 0.8s steps(1) infinite;
+}
+
+.typing-cursor.is-done {
+  display: none;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+

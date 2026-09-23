@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>monthversary</title>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-dim": "#FAF7F2",
+            "surface": "#FDFBF7",
+            "card-solid": "#F7F2EB",
+            "card-featured": "#F4ECE4",
+            "card-border": "#DFD1C2",
+            "card-border-light": "#D6C4B2",
+            "primary": "#885435",
+            "primary-hover": "#6B3F24",
+            "primary-light": "#9E6845",
+            "secondary": "#AF764D",
+            "badge-bg": "#EADBCE",
+            "badge-text": "#5D3E2F",
+            "on-surface": "#38241B",
+            "on-surface-variant": "#5D3E2F",
+            "on-surface-muted": "#7A6357",
+            "modal-bg": "#FAF7F2"
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "serif"],
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body class="bg-surface-dim font-sans text-on-surface antialiased min-h-screen flex flex-col justify-center items-center p-4 sm:p-8 md:p-12 selection:bg-primary selection:text-[#FAF7F2]">
+  <!-- Main Single Centered Section -->
+  <main class="w-full max-w-7xl mx-auto flex flex-col items-center">
+
+    <!-- Bento Grid (5 kata + total pesan) -->
+    <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 mb-10">
+
+      <!-- 1. I love you (col-span-7) -->
+      <div class="md:col-span-7 bg-[#FFFDF9] border border-[#D5C2B1] hover:border-primary transition-all p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group shadow-xs">
+        <div class="absolute -right-2 -top-6 font-serif text-8xl font-black text-[#885435]/[0.06] select-none pointer-events-none">01</div>
+        <div>
+          <div class="flex items-center justify-between gap-3 pb-3 border-b border-[#EADBCE] mb-6">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-[#F5EDE4] border border-[#DFD1C2] text-xs font-mono font-bold text-primary tracking-wider">
+              <span class="w-1.5 h-1.5 bg-primary"></span>
+              <span>01</span>
+            </div>
+          </div>
+          <h2 class="font-medium text-on-surface mb-4 leading-snug">
+            Berapa kali panggilan
+            <span class="text-2xl font-bold">
+            &ldquo;Sayang&rdquo;
+            </span>
+            terucap?
+          </h2>
+          <div class="flex items-baseline gap-3 mb-4 bg-[#FAF7F2] p-4 border border-[#EADBCE]">
+            <span class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-primary counter-value" data-target="7001">0</span>
+            <div class="flex flex-col">
+              <span class="font-mono text-xs text-primary font-bold uppercase tracking-widest">KALI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Maaf (col-span-5) -->
+      <div class="md:col-span-5 bg-[#FFFDF9] border border-[#D5C2B1] hover:border-secondary transition-all p-6 sm:p-7 flex flex-col justify-between relative overflow-hidden group shadow-xs">
+        <div class="absolute -right-2 -top-6 font-serif text-8xl font-black text-[#AF764D]/[0.06] select-none pointer-events-none">02</div>
+        <div>
+          <div class="flex items-center justify-between gap-3 pb-3 border-b border-[#EADBCE] mb-5">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-[#F5EDE4] border border-[#DFD1C2] text-xs font-mono font-bold text-secondary tracking-wider">
+              <span class="w-1.5 h-1.5 bg-secondary"></span>
+              <span>02</span>
+            </div>
+          </div>
+          <h2 class="font-medium text-on-surface mb-3 leading-snug">
+            Berapa kali kita saling ucap
+            <span class="text-2xl font-bold">
+            &ldquo;I love you&rdquo;
+            </span>...?
+          </h2>
+          <div class="flex items-baseline gap-3 mb-4 bg-[#FAF7F2] p-4 border border-[#EADBCE]">
+            <span class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-primary counter-value" data-target="6360">0</span>
+            <div class="flex flex-col">
+              <span class="font-mono text-xs text-primary font-bold uppercase tracking-widest">KALI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Fian (col-span-4) -->
+      <div class="md:col-span-4 bg-[#FFFDF9] border border-[#D5C2B1] hover:border-primary transition-all p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden group shadow-xs">
+        <div class="absolute -right-1 -top-5 font-serif text-7xl font-black text-[#885435]/[0.06] select-none pointer-events-none">03</div>
+        <div>
+          <div class="flex items-center justify-between gap-2 pb-2.5 border-b border-[#EADBCE] mb-4">
+            <div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-[#F5EDE4] border border-[#DFD1C2] text-xs font-mono font-bold text-primary tracking-wider">
+              <span>03</span>
+            </div>
+          </div>
+          <h2 class="text-base font-medium text-on-surface mb-2 leading-snug">
+            Berapa kali kita saling mengucap kata<br/>
+            <span class="text-2xl font-bold">
+                &ldquo;Maaf&rdquo;
+            </span>
+          </h2>
+          <div class="flex items-baseline gap-2.5 mb-3 bg-[#FAF7F2] p-3 border border-[#EADBCE]">
+            <span class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-primary-light counter-value" data-target="1325">0</span>
+            <span class="font-mono text-xs text-primary-light font-bold uppercase tracking-widest">KALI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Terima kasih (col-span-4) -->
+      <div class="md:col-span-4 bg-[#FFFDF9] border border-[#D5C2B1] hover:border-secondary transition-all p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden group shadow-xs">
+        <div class="absolute -right-1 -top-5 font-serif text-7xl font-black text-[#AF764D]/[0.06] select-none pointer-events-none">04</div>
+        <div>
+          <div class="flex items-center justify-between gap-2 pb-2.5 border-b border-[#EADBCE] mb-4">
+            <div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-[#F5EDE4] border border-[#DFD1C2] text-xs font-mono font-bold text-secondary tracking-wider">
+              <span>04</span>
+            </div>
+          </div>
+          <h2 class="text-base font-medium text-on-surface mb-2 leading-snug">
+            Berapa kali kita saling mengucap<br/>
+            <span class="text-2xl font-bold">
+            &ldquo;Terima kasih&rdquo;
+            </span>
+          </h2>
+          <div class="flex items-baseline gap-2.5 mb-3 bg-[#FAF7F2] p-3 border border-[#EADBCE]">
+            <span class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-secondary counter-value" data-target="1173">0</span>
+            <span class="font-mono text-xs text-secondary font-bold uppercase tracking-widest">KALI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Semangat (col-span-4) -->
+      <div class="md:col-span-4 bg-[#FFFDF9] border border-[#D5C2B1] hover:border-primary transition-all p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden group shadow-xs">
+        <div class="absolute -right-1 -top-5 font-serif text-7xl font-black text-[#885435]/[0.06] select-none pointer-events-none">05</div>
+        <div>
+          <div class="flex items-center justify-between gap-2 pb-2.5 border-b border-[#EADBCE] mb-4">
+            <div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-[#F5EDE4] border border-[#DFD1C2] text-xs font-mono font-bold text-primary tracking-wider">
+              <span>05</span>
+            </div>
+          </div>
+          <h2 class="text-base font-medium text-on-surface mb-2 leading-snug">
+            Berapa kali kita saling <br/>
+            <span class="text-2xl font-bold italic">MENYEMANGATI</span>
+          </h2>
+          <div class="flex items-baseline gap-2.5 mb-3 bg-[#FAF7F2] p-3 border border-[#EADBCE]">
+            <span class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-primary counter-value" data-target="750">0</span>
+            <span class="font-mono text-xs text-primary font-bold uppercase tracking-widest">KALI</span>
+          </div>
+          <p class="text-xs text-on-surface-muted leading-relaxed">
+            Api kecil yang kita jaga bersama di hari-hari yang berat.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6. Total pesan terkirim (col-span-12) -->
+      <div class="md:col-span-12 bg-card-featured border border-[#D5C2B1] hover:border-primary transition-all p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 relative overflow-hidden shadow-xs">
+        <div class="absolute -right-2 -top-6 font-serif text-8xl font-black text-[#885435]/[0.06] select-none pointer-events-none">06</div>
+        <div class="text-center sm:text-left">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-[#F5EDE4] border border-[#DFD1C2] text-xs font-mono font-bold text-primary tracking-wider mb-3">
+            <span class="w-1.5 h-1.5 bg-primary"></span>
+            <span>06</span>
+          </div>
+          <h2 class="text-lg sm:text-xl font-medium text-on-surface leading-snug">
+            Total pesan yang sudah kita kirimkan bersama.
+          </h2>
+        </div>
+        <div class="flex items-baseline gap-3 bg-[#FAF7F2] px-6 py-4 border border-[#EADBCE]">
+          <span class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-primary counter-value" data-target="112860">0</span>
+          <span class="text-3xl font-bold text-primary">+</span>
+          <span class="font-mono text-xs text-primary font-bold uppercase tracking-widest">PESAN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Section: Open Secret Poem Button -->
+    <div class="flex flex-col items-center justify-center">
+      <button class="cursor-pointer inline-flex items-center gap-3 px-8 py-3.5 bg-[#4A2F25] hover:bg-[#38241B] text-[#FAF7F2] font-mono font-semibold text-xs tracking-widest uppercase border border-[#251915] active:scale-[0.98] transition-all duration-200 shadow-sm" id="openPoemBtn" type="button">
+        <span class="material-symbols-outlined text-[18px]">mark_email_read</span>
+        <span>BUKA SURAT</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Love Poem Modal Dialog -->
+  <div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#2D1D16]/50 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none" id="poemModal" role="dialog">
+    <div class="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-modal-bg border border-card-border-light p-7 sm:p-10 shadow-2xl transform transition-transform duration-300 scale-95 flex flex-col items-center text-center" id="modalBox">
+      <!-- View 1: Pemberitahuan Surat -->
+      <div class="flex flex-col items-center text-center w-full py-4" id="notifyView">
+        <div class="w-16 h-16 rounded-full bg-[#F5EDE4] border border-[#D5C2B1] flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-[32px]">mail</span>
+        </div>
+        <span class="text-[11px] font-mono text-[#7A6357] uppercase tracking-widest mb-3"></span>
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-on-surface mb-3 tracking-wide">
+          Ikhsan memiliki surat untukmu
+        </h3>
+        <button class="cursor-pointer inline-flex items-center gap-3 px-8 py-3.5 bg-[#4A2F25] hover:bg-[#38241B] text-[#FAF7F2] font-mono font-semibold text-xs tracking-widest uppercase border border-[#251915] active:scale-[0.98] transition-all duration-200 shadow-sm" id="readLetterBtn" type="button">
+          <span class="material-symbols-outlined text-[18px]">mark_email_read</span>
+          <span>BUKA SURAT</span>
+        </button>
+        <button class="mt-4 font-mono text-[11px] tracking-widest uppercase text-[#7A6357] hover:text-primary transition-colors cursor-pointer" id="closeNotifyBtn" type="button">
+          NANTI SAJA
+        </button>
+      </div>
+
+      <!-- View 2: Isi Surat -->
+      <div class="hidden w-full flex-col items-center text-center" id="letterView">
+      <!-- Top Document Header Bar Ala Bunpou -->
+      <div class="w-full flex items-center justify-between border-b border-[#D5C2B1] pb-3 mb-6">
+        <button aria-label="Tutup Puisi" class="w-8 h-8 bg-[#F5EDE4] hover:bg-[#EADBCE] text-on-surface border border-[#D5C2B1] flex items-center justify-center transition-colors font-mono text-sm" id="closePoemBtn" type="button">
+          <span class="material-symbols-outlined text-[18px]">close</span>
+        </button>
+      </div>
+      <!-- Document Meta Stamp -->
+      <div class="w-full flex items-center justify-between text-[11px] font-mono text-[#7A6357] px-3 py-1.5 bg-[#F5EDE4] border border-[#EADBCE] mb-6">
+      </div>
+      <!-- Poem Title -->
+      <h3 class="font-serif text-2xl sm:text-3xl font-bold text-on-surface mb-6 tracking-wide">
+        Belum dikasi judul sama ayang
+      </h3>
+      <!-- Stanzas (muncul dengan animasi mengetik) -->
+      <div class="w-full text-on-surface-variant font-serif text-sm sm:text-base leading-relaxed mb-6 bg-[#FAF7F2] p-6 border border-[#EADBCE] text-center" id="poemBox">
+        <p class="italic whitespace-pre-line"><span id="poemText"></span><span class="typing-cursor" id="typingCursor">▌</span></p>
+      </div>
+      <!-- Couple Dedication -->
+      <div class="w-full pt-4 border-t border-dashed border-[#D5C2B1] flex flex-col items-center">
+        <p class="font-serif text-base text-primary font-semibold">Selamanya Untukmu, Dari Hatiku yang Paling Dalam</p>
+      </div>
+      <!-- Download & Close -->
+      <div class="w-full flex flex-col sm:flex-row items-center justify-center gap-3 mt-6">
+        <button class="cursor-pointer inline-flex items-center gap-2 px-6 py-2.5 bg-[#4A2F25] hover:bg-[#38241B] text-[#FAF7F2] font-mono text-xs font-bold tracking-wider uppercase border border-[#251915] active:scale-[0.98] transition-all" id="downloadImgBtn" type="button">
+          <span class="material-symbols-outlined text-[18px]">download</span>
+          <span>UNDUH SURAT</span>
+        </button>
+        <button class="px-7 py-2.5 bg-[#F5EDE4] border border-[#D5C2B1] hover:bg-[#EADBCE] text-on-surface font-mono text-xs font-bold tracking-wider uppercase transition-colors cursor-pointer" id="closePoemAltBtn" type="button">
+          TUTUP DOKUMEN
+        </button>
+      </div>
+      </div><!-- /letterView -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
